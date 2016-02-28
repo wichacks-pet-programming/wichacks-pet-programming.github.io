@@ -2,56 +2,37 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Pet Programming</title>
+    <title>Java Zoo</title>
     <link rel="stylesheet" href="../css/main-style.css">
 	<link rel="stylesheet" href="../css/select-pets.css">
 	<script src="../scripts/pet-selection.js"></script>
 </head>
 <body>
-    <h1>Welcome to Pet Programming!</h1>
-    
-    <div id="animal">
-        <p>Choose a pet to play with:</p>
+    <div id="animal" class="rounded">
+        <h3>Choose a pet to play with:</h3>
         <button class="img_option">
-            <img src="../media/cat_inactive.bmp" id="cat" class="inactive"
-			onclick="changeImage('animal','cat')"
-			alt="Cat" height="200" width="200">
+            <img id="cat" class="inactive" onclick="changeImage('animal','cat')" alt="Cat">
         </button>
         <button class="img_option">
-            <img src="../media/dog_inactive.bmp" id="dog" class="inactive"
-			onclick="changeImage('animal','dog')"
-			alt="Dog" height="200" width="200">
+            <img id="dog" class="inactive" onclick="changeImage('animal','dog')" alt="Dog">
         </button>
         <button class="img_option">
-            <img src="../media/dinosaur_inactive.bmp" id="dinosaur" class="inactive"
-			onclick="changeImage('animal','dinosaur')"
-			alt="Dinosaur" height="200" width="200">
+            <img id="dinosaur" class="inactive" onclick="changeImage('animal','dinosaur')" alt="Dinosaur">
         </button>
     </div>
-    <br />
-	<br />
-	<br />
-    <div id="difficulty">
-      <p>Choose an appropriate experience level with programming:</p>
+    <div id="difficulty" class="rounded">
+      <h3>Choose an appropriate experience level with programming:</h3>
         <button class="img_option">
-            <img src="../media/one_inactive.bmp" id="one" class="inactive"
-			onclick="changeImage('difficulty','one')"
-			alt="1:  Easy" height="100" width="50">
+            <img id="one" class="inactive" onclick="changeImage('difficulty','one')" alt="1:  Easy">
         </button>
         <button class="img_option">
-            <img src="../media/two_inactive.bmp" id="two" class="inactive"
-			onclick="changeImage('difficulty','two')"
-			alt="2:  Medium" height="100" width="50">
+            <img id="two" class="inactive" onclick="changeImage('difficulty','two')" alt="2:  Medium">
         </button>
         <button class="img_option">
-            <img src="../media/three_inactive.bmp" id="three" class="inactive"
-			onclick="changeImage('difficulty','three')"
-			alt="3:  Difficult" height="100" width="50">
+            <img id="three" class="inactive" onclick="changeImage('difficulty','three')" alt="3:  Hard">
         </button>
     </div>
-	<br />
-	<br />
-	<br />
+	
 	<div>
 	<center>
 	    <a href="./play" class="button">Continue</a>

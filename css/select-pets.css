@@ -1,11 +1,8 @@
-.select{
-	float: left;
-}
-
 .img_option {
-  padding:  10px 10px 10px 10px;
-  height:  200px;
-  width:  200px;
+  background-color:  #ffffff;
+  border:  none;
+  padding:  .25em .25em;
+  display:  inline-block;
 }
 
 #cat.active {
@@ -26,21 +23,30 @@
 #dinosaur.inactive {
 	content:url("../media/dino_kopf_grey.jpg");
 }
+
+#one, #two, #three {
+	height:  auto;
+	width:  auto;
+	max-width:  200px;
+	max-height:  200px;
+	padding:  0 2em;
+}
+
 #one.active {
-	content:url("../media/one_active.bmp");
+	content:url("../media/Button_one_active.png");
 }
 #one.inactive {
-	content:url("../media/one_inactive.bmp");
+	content:url("../media/Button_one.png");
 }
 #two.active{
-	content:url("../media/two_active.bmp");
+	content:url("../media/Button_two_active.png");
 }
 #two.inactive {
-	content:url("../media/two_inactive.bmp");
+	content:url("../media/Button_two.png");
 }
 #three.active {
-	content:url("../media/three_active.bmp");
+	content:url("../media/Button_three_active.png");
 }
 #three.inactive {
-	content:url("../media/three_inactive.bmp");
+	content:url("../media/Button_three.png");
 }
