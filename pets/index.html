@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pet Programming</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+	<link rel="stylesheet" href="../css/select-pets.css">
+	<script src="../scripts/pet-selection.js"></script>
+</head>
+<body>
+    <h1>Welcome to Pet Programming!</h1>
+    
+    <div id="animal">
+        <p>Choose a pet to play with:</p>
+        <button class="img_option">
+            <img src="../media/cat_inactive.bmp" id="cat" class="inactive"
+			onclick="changeImage('animal','cat')"
+			alt="Cat" height="200" width="200">
+        </button>
+        <button class="img_option">
+            <img src="../media/dog_inactive.bmp" id="dog" class="inactive"
+			onclick="changeImage('animal','dog')"
+			alt="Dog" height="200" width="200">
+        </button>
+        <button class="img_option">
+            <img src="../media/dinosaur_inactive.bmp" id="dinosaur" class="inactive"
+			onclick="changeImage('animal','dinosaur')"
+			alt="Dinosaur" height="200" width="200">
+        </button>
+    </div>
+    <br />
+	<br />
+	<br />
+    <div id="difficulty">
+      <p>Choose an appropriate experience level with programming:</p>
+        <button class="img_option">
+            <img src="../media/one_inactive.bmp" id="one" class="inactive"
+			onclick="changeImage('difficulty','one')"
+			alt="1:  Easy" height="100" width="50">
+        </button>
+        <button class="img_option">
+            <img src="../media/two_inactive.bmp" id="two" class="inactive"
+			onclick="changeImage('difficulty','two')"
+			alt="2:  Medium" height="100" width="50">
+        </button>
+        <button class="img_option">
+            <img src="../media/three_inactive.bmp" id="three" class="inactive"
+			onclick="changeImage('difficulty','three')"
+			alt="3:  Difficult" height="100" width="50">
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+.select{
+	float: left;
+}
+
+.img_option {
+  padding:  10px 10px 10px 10px;
+}
+
+#cat.active {
+	content:url("../media/cat_active.bmp");
+}
+#cat.inactive {
+	content:url("../media/cat_inactive.bmp");
+}
+#dog.active {
+	content:url("../media/dog_active.bmp");
+}
+#dog.inactive {
+	content:url("../media/dog_inactive.bmp");
+}
+#dinosaur.active {
+	content:url("../media/dinosaur_active.bmp");
+}
+#dinosaur.inactive {
+	content:url("../media/dinosaur_inactive.bmp");
+}
+#one.active {
+	content:url("../media/one_active.bmp");
+}
+#one.inactive {
+	content:url("../media/one_inactive.bmp");
+}
+#two.active{
+	content:url("../media/two_active.bmp");
+}
+#two.inactive {
+	content:url("../media/two_inactive.bmp");
+}
+#three.active {
+	content:url("../media/three_active.bmp");
+}
+#three.inactive {
+	content:url("../media/three_inactive.bmp");
+}
