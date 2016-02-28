@@ -7,28 +7,22 @@
 
 </head>
 <body>
-    <div id="splash-heading">
 	<h1>Welcome to Pet Programming!</h1>
+	<div class="rounded">
 	<p>Learn about the Java programming language by interacting with virtual
 	pet "objects."</p>
-	<p>Java is an Object Oriented language.  It uses the concept of objects to
+	<p>Java is an Object Oriented language.  This means that it uses the concept of objects to
 	represent data.</p>
-	<p>In the example presented here, you will be presented with an Interface
-	Animal which is implemented by 3 different classes, Cat, Dog, and Dinosaur.
-	The Interface Animal provides a list of methods that any implementing classes
-	must provide code for:  speak, jump, and wave.  Because Cat, Dog, and Dinosaur
-	implement Animal, each can be referred to as "Animal" and will choose their 
-	own versions of the method.</p>
-	<br />
-	<p>Notice:  this is still a work-in-progress.  The color scheme on the current
-	site were done by a coder who would not claim to be a designer.  The /"Final
-	Design /" button goes to pages that depict where we would like the application's
-	design to go.</p>
-	<br />
-	<br />
+	<p>In the example presented here, you will encounter an abstract class
+	Animal which is extened by 3 different classes, Cat, Dog, and Dinosaur.<br />
+	Animal has two varieties of methods:  some are labelled as abstract, and
+	some are not.<br />  The abstract methods are placeholders of sorts:  any class
+	that extends Animal must implement these or else be an abstract class as well.<br />
+	The other methods in Animal, however, have code associated with them; an extending
+	class may override these methods, but is not required to do so.</p>
     </div>
 	
-	<div>
+	<div class="rounded">
 	<h2>Which would you like to explore first?</h2>
 	<a href="./final" class="button">Final Design</a>
 	<a href="./pets" class="button">Pets</a>
