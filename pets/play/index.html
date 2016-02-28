@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pet Programming</title>
+    <link rel="stylesheet" href="../../css/main-style.css">
+	<link rel="stylesheet" href="../../css/pet-interact.css">
+</head>
+<body>
+    <div> <!-- wrapper -->
+		<div class="section">
+	    <div id="buttons">
+		</div>
+		<div id="pet">
+		</div>
+		</div>
+		<div class="section">
+		<div id="commandDisplay">
+		</div>
+		<div id="codesnippets" class="tabs">
+			<div id="animal-tab"><a href="#animal-tab">Animal</a>
+				<div id="animal-box">
+					<pre><code>
+public abstract class Animal
+{
+	private int position;
+	private String name;
+	
+	public abstract void speak();
+	
+	public void eat()
+	{
+		Cookie myCookie = new Cookie();
+		while( !(myCookie.isGone()) )
+		{
+			takeABite( myCookie );
+		}
+	}
+				
+	private void takeABite( Cookie cookieObject )
+	{
+		cookieObject.setHealth( cookieObject.get_health() - 1 );
+	}
+					
+	public void move( boolean toTheLeft )
+	{
+		if ( toTheLeft )
+		{
+			position -= 0;
+		}
+		else
+		{
+			position++;
+		}
+	}
+}
+					</code></pre>
+				</div>
+			</div>
+			<div id="cat-tab"><a href="#cat-tab">Cat</a>
+				<div id="cat-box">
+					<pre><code>
+public class Cat extends Animal
+{
+	public Cat()
+	{
+		this( name );
+	}
+					
+	public Cat( String name )
+	{
+		position = 0;
+		this.name = name;
+	}
+
+	// implements speak() from Animal class
+	public void speak()
+	{
+		print("Meow");
+	}
+}
+					</code></pre>
+				</div>
+			</div>
+			<div id="dinosaur-tab"><a href="#dinosaur-tab">Dinosaur</a>
+				<div id="dinosaur-box">
+					<pre><code>
+public class Dinosaur extends Animal
+{
+	private boolean keepEating;
+		
+	public Dinosaur()
+	{
+		position = 0;
+		keepEating = true;
+		name = "Puff";
+	}
+						
+	public Dinosaur( String name )
+	{
+		this.name = name;
+		position = 0;
+		keepEating = true;
+	}
+
+	public void eat()
+	{
+		Cookie myCookie = new Cookie();
+		while( !(myCookie.isGone()) )
+		{
+			takeABite( myCookie );
+		}				
+	}
+			
+	private void takeABite( Cookie cookieObject )
+	{
+		cookieObject.setHealth( cookieObject.get_health() - 1 );
+	}
+						
+	public void stopEating()
+	{
+		keepEating = false;
+	}
+						
+}
+					</code></pre>
+				</div>
+			</div>
+			<div id="dog-tab"><a href="#dog-tab">Dog</a>
+				<div id="dog-box">
+					<pre><code>
+public class Dog extends Animal
+{
+	public Dog()
+	{
+		position = 0;
+		name = "Fido";
+	}
+						
+	public Dog(name)
+	{
+		position = 0;
+		this.name = name;
+	}
+			
+	// implements speak() from Animal class
+	public void speak()
+	{
+		print("Arff");
+	}
+}
+					</code></pre>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

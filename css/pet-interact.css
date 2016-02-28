@@ -1,0 +1,87 @@
+.section > div {
+	height: 30em;
+	width:  40em;
+	margin:  1em 1em 1em 1em;
+}
+
+#commandDisplay{
+	color:white;
+	background: #8a2be2;
+	overflow: auto;
+	padding: 0.3em;
+	border: 0.1em outset #9683ec;
+	float:  left;
+}
+
+#buttons{
+	color:white;
+	background: #8a2be2;
+	overflow: auto;
+	padding: 0.3em;
+	border: 0.1em outset #9683ec;
+	float:  left;
+	height:  40em;
+}
+
+#pet{
+	background: #8a2be2;
+	padding: 0.3em;
+	border: 0.1em outset #9683ec;
+	float:  right;
+	height:  40em;
+	width:  55em;
+}
+
+#codesnippets{
+	width:  55em;
+	float:  right;
+}
+
+.section{
+    display: inline;
+}
+
+pre{
+	font-family:  monospace;
+}
+
+.tabs {
+	min-height: 7em;
+    position: relative;
+    line-height: 1;
+    z-index: 0
+}
+div.tabs > div {
+    display: inline;
+}
+div.tabs > div > a {
+  color: white;
+  background: #8a2be2;
+  font-size:  1.5em;
+  padding: 0.2em;
+  border: 0.1em outset #9683ec;
+  border-bottom: 0.1em solid #8a2be2}
+div.tabs > div:not(:target) > a {
+  border-bottom: none;
+  background: #553592}
+div.tabs > div:target > a {
+  border-bottom: 0.1em solid #8a2be2;
+  background: #8a2be2
+}
+div.tabs > div > div {
+	font-size:  1.5em;
+	color:  white;
+	background: #8a2be2;
+    z-index: -2;
+    left: 0; top: 1.3em;
+    bottom: 0; right: 0;
+    overflow: auto;
+    padding: 0.3em;
+    border: 0.1em outset #9683ec}
+div.tabs > div:not(:target) > div {
+  position: absolute }
+div.tabs > div:target > div, :target #default2 > div {
+  position: absolute;
+  z-index: -1}
+div.tabs :target {
+  outline: none}

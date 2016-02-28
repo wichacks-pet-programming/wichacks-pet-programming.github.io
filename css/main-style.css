@@ -5,6 +5,7 @@ body {
 div {
   background-color:  #ace5ee; /* Blizzard Blue */
   margin-bottom:  20px;
+  
 }
 
 .button {
@@ -17,5 +18,4 @@ div {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-	float: center;
 }
