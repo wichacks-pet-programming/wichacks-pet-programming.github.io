@@ -1,0 +1,9 @@
+#cat.default {
+	content:url("../media/cat_active.bmp");
+}
+#dog.default {
+	content:url("../media/hund_hitergrund.gif");
+}
+#dinosaur.default {
+	content:url("../media/Dino.gif");
+}
