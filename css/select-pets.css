@@ -10,19 +10,19 @@
 	content:url("../media/cat_kopf.jpg");
 }
 #cat.inactive {
-	content:url("../media/cat_kopf_gray.jpg");
+	content:url("../media/cat_kopf_grey.jpg");
 }
 #dog.active {
-	content:url("../media/dog_active.bmp");
+	content:url("../media/dog_kopf.jpg");
 }
 #dog.inactive {
-	content:url("../media/dog_inactive.bmp");
+	content:url("../media/dog_kopf_grey.jpg");
 }
 #dinosaur.active {
-	content:url("../media/dinosaur_active.bmp");
+	content:url("../media/dino_kopf.jpg");
 }
 #dinosaur.inactive {
-	content:url("../media/dinosaur_inactive.bmp");
+	content:url("../media/dino_kopf_grey.jpg");
 }
 #one.active {
 	content:url("../media/one_active.bmp");
