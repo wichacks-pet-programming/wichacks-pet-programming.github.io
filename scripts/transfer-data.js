@@ -32,3 +32,12 @@ function setPet()
 		SetX("dog");
 	}
 }
+
+function run(){
+	var imgs = getElementByTag("img");
+	var i = imgs.length;
+	while ( i-- )
+	{
+		imgs[i].setAttribute("id",GetX());
+	}
+}
