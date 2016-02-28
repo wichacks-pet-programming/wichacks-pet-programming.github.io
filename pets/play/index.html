@@ -11,16 +11,18 @@
 <body>
     <div> <!-- wrapper -->
 		<div class="section">
-	    <div id="buttons">
+	    <div id="buttons" class="rounded">
+		    <button class="commands">a.speak();</button>
+			<button class="commands">a.eat();</button>
+			<button class="commands">a.move();</button>
+			<button class="commands">a = new Cat();</button>
+			<button class="commands">a = new Dog();</button>
+			<button class="commands">a = new Dinosaur();</button>
 		</div>
-		<div id="pet">
-		    <img id="dinosaur" class="default"></img>
-		</div>
-		</div>
-		<div class="section">
-		<div id="commandDisplay">
-		</div>
-		<div id="codesnippets" class="tabs">
+		<!--<div id="commandDisplay" class="rounded">
+		</div>-->
+		<div id="codesnippets" class="rounded">
+		<div class="tabs">
 			<div id="animal-tab"><a href="#animal-tab">Animal</a>
 				<div id="animal-box">
 					<pre><code>
@@ -42,14 +44,15 @@ public abstract class Animal
 				
 	private void takeABite( Cookie cookieObject )
 	{
-		cookieObject.setHealth( cookieObject.get_health() - 1 );
+		cookieObject.setHealth(
+		    cookieObject.get_health() - 1 );
 	}
 					
 	public void move( boolean toTheLeft )
 	{
 		if ( toTheLeft )
 		{
-			position -= 0;
+			position -= 1;
 		}
 		else
 		{
@@ -117,7 +120,8 @@ public class Dinosaur extends Animal
 			
 	private void takeABite( Cookie cookieObject )
 	{
-		cookieObject.setHealth( cookieObject.get_health() - 1 );
+		cookieObject.setHealth(
+		    cookieObject.get_health() - 1 );
 	}
 						
 	public void stopEating()
@@ -155,7 +159,12 @@ public class Dog extends Animal
 					</code></pre>
 				</div>
 			</div>
-			</div>
+		</div>
+		</div>
+		</div>
+		
+		<div id="pet" class="section">
+		    <img id="dinosaur" class="default"></img>
 		</div>
 	</div>
 </body>

@@ -1,43 +1,44 @@
-.section > div {
-	height: 30em;
-	width:  40em;
-	margin:  1em 1em 1em 1em;
+.section{
+    display: inline-block;
+	float:  left;
+}
+
+.section > div{
+	margin:  1em 1em;
+	padding:  .5em .5em;
+	max-width:  45em;
+}
+
+#pet.section{
+	float:  right;
+	margin:  1em 1em;
+	padding:  .5em .5em;
+	max-width:  40em;
 }
 
 #commandDisplay{
-	color:white;
-	background: #8a2be2;
 	overflow: auto;
-	padding: 0.3em;
-	border: 0.1em outset #9683ec;
 }
 
 #buttons{
-	color:white;
-	background: #8a2be2;
-	overflow: auto;
-	padding: 0.3em;
-	border: 0.1em outset #9683ec;
-	height:  40em;
+	max-height:  20em;
+	overflow:  auto;
 }
 
-#pet{
-	background: #8a2be2;
-	padding: 0.3em;
-	border: 0.1em outset #9683ec;
-	height:  40em;
-	width:  55em;
+button.commands{
+  font-size:  2em;
+  margin:  .25em 0 .25em 0;
+  background-color:  #ffffff;
+  border:  solid thick #000000;
+  padding:  .25em .25em;
+  display:  inline-block;
+  border-radius:  1em;
 }
 
 #codesnippets{
-	background: #8a2be2;
-	padding: 0.3em;
-	border: 0.1em outset #9683ec;
-	width:  55em;
-}
-
-.section{
-    display: inline-block;
+	min-width:  40em;
+	text-align:  left;
+	min-height:  20em;
 }
 
 pre{
@@ -45,7 +46,8 @@ pre{
 }
 
 .tabs {
-	min-height: 7em;
+	min-height: 19em;
+	padding-top:  .5em;
     position: relative;
     line-height: 1;
     z-index: 0
@@ -74,9 +76,10 @@ div.tabs > div > div {
     z-index: -2;
     left: 0; top: 1.3em;
     bottom: 0; right: 0;
-    overflow: auto;
+	overflow: auto;
     padding: 0.3em;
-    border: 0.1em outset #9683ec}
+    border: 0.1em outset #9683ec;
+}
 div.tabs > div:not(:target) > div {
   position: absolute }
 div.tabs > div:target > div, :target #default2 > div {
