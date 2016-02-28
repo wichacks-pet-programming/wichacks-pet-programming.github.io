@@ -4,6 +4,8 @@
 
 .img_option {
   padding:  10px 10px 10px 10px;
+  height:  200px;
+  width:  200px;
 }
 
 #cat.active {

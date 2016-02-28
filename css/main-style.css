@@ -1,11 +1,12 @@
 body {
     background-color:  #0018A8; /* Blue (Pantone) */
+	color:  white;
 }
 
 div {
   background-color:  #ace5ee; /* Blizzard Blue */
   margin-bottom:  20px;
-  
+  color:  black;
 }
 
 .button {
